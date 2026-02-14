@@ -1,3 +1,4 @@
+
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
@@ -12,9 +13,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "ru-RU",
     baseUrl: "watisluv1910.github.io/re-classic-350-reborn-maintenance",
     ignorePatterns: ["private", "templates", ".obsidian"],
@@ -23,32 +22,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Ubuntu Sans",
+        code: "JetBrains Mono",
+        body: "Ubuntu Sans",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#ebe6e0",       // Parchment – soft off-white background
+          lightgray: "#f9d9b1",   // Soft Apricot – warm, subtle borders
+          gray: "#b89a80",        // Taupe (added) – medium neutral for heavier borders and graph links
+          darkgray: "#5a402b",    // Dark brown (derived from Dark Coffee) – body text, good contrast
+          dark: "#422b19",        // Dark Coffee – headers and icons
+          secondary: "#195e5c",   // Stormy Teal – links and current graph node
+          tertiary: "#dcaf81",    // Sandy Clay – hover states and visited graph nodes
+          highlight: "rgba(25, 94, 92, 0.1)", // Stormy Teal at 10% – subtle background for internal links, code highlights
+          textHighlight: "#fbe5b0cc" // Light apricot (added) with 80% opacity – markdown highlighter effect
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#422b19",          // Dark Coffee – deep, warm page background
+          lightgray: "#d9b594",      // Light Sandy Clay (derived) – subtle borders
+          gray: "#b99e82",           // Warm Gray (added) – graph links and heavier borders
+          darkgray: "#ebe6e0",       // Parchment – body text (light beige)
+          dark: "#f9d9b1",           // Soft Apricot – headers and icons
+          secondary: "#33a5a2",      // Bright Teal (lightened Stormy Teal) – links, current graph node
+          tertiary: "#dcaf81",       // Sandy Clay – hover states, visited graph nodes
+          highlight: "rgba(51,165,162,0.2)", // Bright Teal at 20% – background for internal links, code highlights
+          textHighlight: "rgba(249,217,177,0.4)" // Soft Apricot at 40% – markdown highlighter effect
         },
       },
     },
