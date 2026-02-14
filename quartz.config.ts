@@ -34,7 +34,7 @@ const config: QuartzConfig = {
           darkgray: "#4e4e4e",       // Dark gray body text (good contrast)
           dark: "#2b2b2b",           // Almost black headers and icons
           secondary: "#EBAB00",      // Mustard Gold – links, current graph node
-          tertiary: "#FE2414",       // Neon Red – hover states, visited graph nodes
+          tertiary: "#E52E11",       // Neon Red – hover states, visited graph nodes
           highlight: "rgba(235,171,0,0.15)", // Mustard Gold at 15% – internal link/code background
           textHighlight: "rgba(254,36,20,0.4)" // Neon Red at 40% – mark highlights
         },
@@ -45,7 +45,7 @@ const config: QuartzConfig = {
           darkgray: "#d4d4d4",       // Light gray body text
           dark: "#ebebec",           // Near-white headers and icons
           secondary: "#EBAB00",      // Mustard Gold – links, current graph node
-          tertiary: "#FE2414",       // Neon Red – hover states, visited graph nodes
+          tertiary: "#E52E11",       // Neon Red – hover states, visited graph nodes
           highlight: "rgba(235,171,0,0.25)", // Mustard Gold at 25% – internal link/code background
           textHighlight: "rgba(254,36,20,0.4)" // Neon Red at 40% – mark highlights
         },
