@@ -19,6 +19,10 @@ interface BreadcrumbOptions {
    */
   rootName: string
   /**
+   * Whether to show root page in breadcrumbs
+   */
+  showRootPage: boolean
+  /**
    * Whether to look up frontmatter title for folders (could cause performance problems with big vaults)
    */
   resolveFrontmatterTitle: boolean
@@ -31,6 +35,7 @@ interface BreadcrumbOptions {
 const defaultOptions: BreadcrumbOptions = {
   spacerSymbol: "❯",
   rootName: "Модели",
+  showRootPage: false,
   resolveFrontmatterTitle: true,
   showCurrentPage: true,
 }
@@ -71,6 +76,10 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
 
       return crumb
     })
+
+    if (!options.showRootPage) {
+      crumbs.shift()
+    }
 
     if (!options.showCurrentPage) {
       crumbs.pop()
