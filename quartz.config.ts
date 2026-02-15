@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "ru-RU",
-    baseUrl: "watisluv1910.github.io/re-classic-350-reborn-maintenance",
+    baseUrl: "watisluv1910.github.io/re-diy-maintenance",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
